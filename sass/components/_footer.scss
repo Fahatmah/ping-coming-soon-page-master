@@ -1,0 +1,42 @@
+@use '../abstracts' as *;
+
+footer {
+	position: relative;
+	gap: 1.5rem;
+	@include md {
+		transform: translateY(-4.1rem);
+	}
+
+	.icons {
+		gap: 0.9rem;
+		flex-direction: row;
+
+		a {
+			padding: 0.5rem;
+			border: 1px solid $Pale_Blue;
+			border-radius: 50%;
+			transition: 0.3s ease-in-out;
+
+			&:hover {
+				background-color: $Blue;
+			}
+
+			&:hover > img {
+				filter: invert(1);
+			}
+
+			img {
+				width: 0.8rem;
+				filter: $invertToBlue;
+
+				&:nth-child(1) {
+					height: 0.8rem;
+				}
+			}
+		}
+	}
+	p {
+		font-size: clamp(0.6rem, 2vw + 0.1rem, 0.8rem);
+		color: $Gray;
+	}
+}

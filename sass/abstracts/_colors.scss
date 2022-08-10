@@ -1,0 +1,19 @@
+// ### Primary
+
+$Blue: hsl(223, 87%, 63%);
+
+// ### Secondary
+
+$Pale_Blue: hsl(223, 100%, 88%);
+$Light_Red: hsl(354, 100%, 66%);
+
+// ### Neutral
+
+$Gray: hsl(0, 0%, 59%);
+$Very_Dark_Blue: hsl(209, 33%, 12%);
+$White: hsl(0, 0, 100%);
+
+$invertToBlue: invert(42%) sepia(37%) saturate(2876%) hue-rotate(209deg)
+	brightness(99%) contrast(92%);
+
+$hoverButton: hsl(223, 81%, 75%);

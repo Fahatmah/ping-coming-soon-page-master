@@ -1,0 +1,95 @@
+@use '../abstracts' as *;
+
+form {
+	position: relative;
+	width: 100%;
+	padding-inline: 1.15rem;
+
+	.email__container {
+		position: relative;
+		width: 100%;
+		gap: 0.7rem;
+		@include md {
+			flex-direction: row;
+		}
+
+		&.valid input {
+			border: 2px solid #3fe9a0;
+		}
+
+		&.invalid input {
+			border: 2px solid $Light_Red;
+		}
+
+		&.invalid .validation__txt {
+			visibility: visible;
+			@include md {
+				transform: translate(-13rem, 1.5rem);
+			}
+		}
+
+		.validation__txt {
+			position: absolute;
+			top: 2.8rem;
+			font-size: 0.65rem;
+			font-weight: 600;
+			font-style: italic;
+			color: $Light_Red;
+			visibility: hidden;
+		}
+
+		& > * {
+			width: 100%;
+			border: none;
+			outline: none;
+			border-radius: 2.5rem;
+		}
+
+		.email__input {
+			border: 1px solid $Pale_Blue;
+			border-radius: 2.5rem;
+			padding-inline-start: 2.3rem;
+			padding-block: 0.6rem;
+			font-size: 0.78rem;
+			@include md {
+				padding-block: 1.2rem;
+			}
+		}
+
+		input::placeholder {
+			color: $Pale_Blue;
+			font-size: 0.78rem;
+		}
+
+		button {
+			font-size: 0.75rem;
+			color: $White;
+			padding: 0.7rem;
+			background-color: $Blue;
+			box-shadow: 0 4px 10px #4f7df367;
+			@include md {
+				width: 17rem;
+				padding-block: 1.2rem;
+			}
+
+			&.invalidEmail {
+				transform: translateY(2rem);
+				@include md {
+					transform: translateY(0);
+				}
+			}
+
+			&.validEmail {
+				transform: translateY(0);
+			}
+
+			&:hover {
+				background-color: $hoverButton;
+			}
+
+			&:active {
+				background-color: $Blue;
+			}
+		}
+	}
+}

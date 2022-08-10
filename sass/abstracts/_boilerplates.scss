@@ -1,0 +1,29 @@
+@use '../abstracts' as *;
+
+body {
+	gap: 9rem;
+	font-size: 20px;
+	font-family: $libreFranklin;
+}
+
+body,
+main,
+header,
+.texts,
+form,
+.email__container,
+.icons,
+footer {
+	@include flexContent(center, center, column);
+	text-align: center;
+}
+
+main {
+	gap: 3.2rem;
+	margin-block-start: 5.5rem;
+	width: min(100% - 4rem, 40rem);
+	@include md {
+		margin-block-start: 0;
+		gap: 4.7rem;
+	}
+}
