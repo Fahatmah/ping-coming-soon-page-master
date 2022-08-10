@@ -23,7 +23,7 @@ Users should be able to:
 
 ![](/assets/mobile-view.jpeg)
 
-- Live Site:[Ping Coming](https://ping-coming-soon-page-frontend.netlify.app/)
+- Live Site: [Ping Coming Soon Page](https://ping-coming-soon-page-frontend.netlify.app/)
 
 ### Built with
 
