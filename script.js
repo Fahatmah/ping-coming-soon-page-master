@@ -12,12 +12,12 @@ function emailInputCheck() {
 
 	if (emailVal == '') {
 		invalidEmail(email, 'Enter your email first');
-		notifyButton.classList.add('invalidEmail')
+		notifyButton.classList.add('invalidEmail');
 	} else if (!isEmail(emailVal)) {
 		invalidEmail(email, 'Please provide a valid email address');
 		notifyButton.classList.add('invalidEmail');
 	} else {
-		notifyButton.classList.add('validEmail');
+		notifyButton.classList.remove('invalidEmail');
 		validEmail(email);
 	}
 }

@@ -79,10 +79,6 @@ form {
 				}
 			}
 
-			&.validEmail {
-				transform: translateY(0);
-			}
-
 			&:hover {
 				background-color: $hoverButton;
 			}
