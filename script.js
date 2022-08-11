@@ -13,11 +13,9 @@ function emailInputCheck() {
 	if (emailVal == '') {
 		invalidEmail(email, 'Enter your email first');
 		notifyButton.classList.add('invalidEmail')
-		notifyButton.classList.remove('validEmail');
 	} else if (!isEmail(emailVal)) {
 		invalidEmail(email, 'Please provide a valid email address');
 		notifyButton.classList.add('invalidEmail');
-		notifyButton.classList.remove('validEmail');
 	} else {
 		notifyButton.classList.add('validEmail');
 		validEmail(email);

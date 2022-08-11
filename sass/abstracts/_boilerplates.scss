@@ -23,7 +23,7 @@ main {
 	margin-block-start: 5.5rem;
 	width: min(100% - 4rem, 40rem);
 	@include md {
-		margin-block-start: 3rem;
+		margin-block-start: 4rem;
 		gap: 4.7rem;
 	}
 }
